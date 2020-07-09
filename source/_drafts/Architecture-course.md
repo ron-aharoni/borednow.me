@@ -23,3 +23,9 @@ I will update on each lesson as I do it. So far I thought of the following units
 [Life beyond Distributed Transactions: an Apostate’s Opinion](https://www.ics.uci.edu/~cs223/papers/cidr07p15.pdf)
 
 [Paxos Made Simple](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
+
+[LogPlayer: Fault-tolerant Exactly-once Delivery using gRPC Asynchronous Streaming](https://arxiv.org/pdf/1911.11286.pdf)
+
+## Serverless
+[Starling: A Scalable Query Engine on Cloud Function
+Services](https://arxiv.org/pdf/1911.11727.pdf)
