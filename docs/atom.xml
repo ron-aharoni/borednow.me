@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="borednow.me/"/>
-  <updated>2020-07-08T17:19:29.091Z</updated>
+  <updated>2020-07-10T14:11:03.213Z</updated>
   <id>borednow.me/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>This blog</title>
+    <link href="borednow.me/2020/07/10/this-blog/"/>
+    <id>borednow.me/2020/07/10/this-blog/</id>
+    <published>2020-07-10T14:11:03.213Z</published>
+    <updated>2020-07-10T14:11:03.213Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>This blog was created using <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> and is hosted on GitHub pages.<br>I used this <a href="https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39" target="_blank" rel="noopener">tutorial</a> and the <a href="https://github.com/probberechts/hexo-theme-cactus" target="_blank" rel="noopener">Cactus</a> theme.</p><h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p>Instead of using hexo-deployer-git for deploying to GitHub Pages, I defined /docs to be the public folder for the site. This enables the source and the generate site to be in the same repository. A tutorial can be found <a href="https://www.poweredbyjeff.com/2018/05/14/Deploying-Hexo-website-to-Github-Pages/" target="_blank" rel="noopener">here</a>.</p><h3 id="Domain"><a href="#Domain" class="headerlink" title="Domain"></a>Domain</h3><p>Bought from <a href="https://www.namecheap.com/" target="_blank" rel="noopener">namecheap</a>. Setup described <a href="https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/" target="_blank" rel="noopener">here</a>.</p><h3 id="Icons"><a href="#Icons" class="headerlink" title="Icons"></a>Icons</h3><p>Icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" rel="noopener"">flaticon.com</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h3><p>Create a draft</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft <span class="string">"My Draft"</span></span><br></pre></td></tr></table></figure><p>Publish a draft</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish <span class="string">"My Draft"</span></span><br></pre></td></tr></table></figure><p>Create a new post</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h3><p>Generate static files</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><p>Generate and deploy site</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm run deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Setup&quot;&gt;&lt;a href=&quot;#Setup&quot; class=&quot;headerlink&quot; title=&quot;Setup&quot;&gt;&lt;/a&gt;Setup&lt;/h2&gt;&lt;p&gt;This blog was created using &lt;a href=&quot;https://hexo.io&quot; targ
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Life Philosophy</title>
     <link href="borednow.me/2020/07/08/Life-Philosophy/"/>
     <id>borednow.me/2020/07/08/Life-Philosophy/</id>
     <published>2020-07-08T17:19:00.000Z</published>
-    <updated>2020-07-08T17:19:29.091Z</updated>
+    <updated>2020-07-10T14:11:03.213Z</updated>
     
     <content type="html"><![CDATA[<ol><li>Talk about your feelings.</li><li>Do something you are good at.</li><li>Keep yourself hydrated.</li><li>Eat well.</li><li>Keep active in mind and body.</li><li>Take a break.</li><li>Stay connected to those you care about.</li><li>Ask for help.</li><li>Be proud of your very being.</li><li>Actively care for others.</li></ol>]]></content>
     
@@ -35,28 +57,6 @@
 &lt;li&gt;Keep yourself hydrated.&lt;/li&gt;
 &lt;li&gt;Eat well.&lt;/li&gt;
 &lt;li&gt;Keep 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>This blog</title>
-    <link href="borednow.me/2020/06/06/this-blog/"/>
-    <id>borednow.me/2020/06/06/this-blog/</id>
-    <published>2020-06-06T16:47:49.211Z</published>
-    <updated>2020-07-08T19:39:36.249Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>This blog was created using <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> and is hosted on GitHub pages.<br>I used this <a href="https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39" target="_blank" rel="noopener">tutorial</a> and the <a href="https://github.com/probberechts/hexo-theme-cactus" target="_blank" rel="noopener">Cactus</a> theme.</p><h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p>Instead of using hexo-deployer-git for deploying to GitHub Pages, I defined /docs to be the public folder for the site. This enables the source and the generate site to be in the same repository. A tutorial can be found <a href="https://www.poweredbyjeff.com/2018/05/14/Deploying-Hexo-website-to-Github-Pages/" target="_blank" rel="noopener">here</a>.</p><h3 id="Domain"><a href="#Domain" class="headerlink" title="Domain"></a>Domain</h3><p>Bought from <a href="https://www.namecheap.com/" target="_blank" rel="noopener">namecheap</a>. Setup described <a href="https://richpauloo.github.io/2019-11-17-Linking-a-Custom-Domain-to-Github-Pages/" target="_blank" rel="noopener">here</a>.</p><h3 id="Icons"><a href="#Icons" class="headerlink" title="Icons"></a>Icons</h3><p>Icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" rel="noopener"">flaticon.com</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Writing"><a href="#Writing" class="headerlink" title="Writing"></a>Writing</h3><p>Create a draft</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft <span class="string">"My Draft"</span></span><br></pre></td></tr></table></figure><p>Publish a draft</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish <span class="string">"My Draft"</span></span><br></pre></td></tr></table></figure><p>Create a new post</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h3><p>Generate static files</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><p>Generate and deploy site</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm run deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Setup&quot;&gt;&lt;a href=&quot;#Setup&quot; class=&quot;headerlink&quot; title=&quot;Setup&quot;&gt;&lt;/a&gt;Setup&lt;/h2&gt;&lt;p&gt;This blog was created using &lt;a href=&quot;https://hexo.io&quot; targ
       
     
     </summary>
