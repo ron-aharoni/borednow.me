@@ -4,6 +4,7 @@ date: 2020-07-08 22:16:30
 tags:
 ---
 
+
 I recently purchased a laptop. My requirements were a HiDPI screen for photo editing, 16GB of RAM and a CPU that is suitable for development (not only of the Node.js full stack variety).
 
 I considered an MBP, but used MacBook's have horrible keyboard or are too old, and newer ones cost alot. With macs out of the picture, I considered Lenovo, Dell, and Asus, and my budget was up to 1300USD. A refurbished or used thinkpad would have answered all the requirements, except for the screen, and they also have old propietary charging connectors which are annoying if you're used to USB C.
