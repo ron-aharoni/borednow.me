@@ -2,6 +2,7 @@
 title: Life Philosophy
 date: 2020-07-08 20:19:00
 tags:
+- philosophy
 ---
 
 1. Talk about your feelings.

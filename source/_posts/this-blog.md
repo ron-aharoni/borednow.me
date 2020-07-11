@@ -1,5 +1,9 @@
 ---
 title: This blog
+date: 2020-06-08 12:19:00
+tags:
+- hexo
+- blog
 ---
 
 ## Setup
