@@ -1,9 +1,11 @@
 ---
 title: Linux laptop
-date: 2020-07-08 22:16:30
+date: 2020-07-10 22:16:30
 tags:
+- Linux
+- Development
+- Manjaro
 ---
-
 
 I recently purchased a laptop. My requirements were a HiDPI screen for photo editing, 16GB of RAM and a CPU that is suitable for development (not only of the Node.js full stack variety).
 
