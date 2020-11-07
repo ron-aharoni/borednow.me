@@ -25,20 +25,24 @@ The assembly process, with the help of my friend, was pretty simple. We installe
 The hardest part was surprisingly flashing the firmware, which is why I decided to document it here.
 1. [Install](https://beta.docs.qmk.fm/tutorial/newbs_getting_started) qmk
 2. Build your keymap on [https://config.qmk.fm/](https://config.qmk.fm/)
-3. Download the keymap json and save it in the folder appropriate for your keyboard type.
-4. Generate `keymap.c` by running the following command, replacing the folder and layout name:
+3. Download the keymap json and save it in the qmk_firmware folder (the qmk installation location).
+4. Generate the firmware by running the following command:
 ```bash
-$ make keebio/nyquist/rev3:mylayout
+$ qmk compile mylayout.json
 ```
 This copies the firmware into qmk's firmware folder.
-5. Press your keyboard's reset button.
-6. Flash the firmware by running the following. Again replace folder and layout name.
+5. Reset your keyboard.
+6. Flash the firmware:
 ```bash
 $ sudo make keebio/nyquist/rev3:mylayout:flash
 ```
 
 ### The end result
+As you can see I had to be creative with some keycap labels, but more are on the way :)
 
-![The keyboard](IMG_20201023_195103.jpg)
-![At work](IMG_20201024_104204.jpg)
-![Leds](IMG_20201024_104208.jpg)
+</br>
+<img style="display: inline;" src="/images/IMG_20201024_195103.jpg">
+</br>
+<img style="display: inline;" src="/images/IMG_20201025_104204.jpg">
+</br>
+<img style="display: inline;" src="/images/IMG_20201025_104208.jpg">
