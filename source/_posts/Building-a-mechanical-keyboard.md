@@ -20,6 +20,12 @@ I ordererd the following:
 
 The assembly process, with the help of my friend, was pretty simple. We installed the space bar stabilizers, soldered the switches and assembled the top and bottom plates.
 
+### Designing a layout
+
+Due to the keyboard being a 60% keyboard, and missing some keys, several layers are needed. Here are my layers for the Nyquist:
+</br>
+<img style="display: inline;" src="/images/layout.png">
+
 ### Flashing the firmware
 
 The hardest part was surprisingly flashing the firmware, which is why I decided to document it here.
