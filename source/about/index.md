@@ -3,7 +3,7 @@ title: about
 date: 2020-06-06 20:20:09
 ---
 
-Welcome to my blog. I'm a software engineer and photographer. This blog will include my random thoughts.
+Welcome to my blog. I'm a software engineer and photographer. This blog will include my random thoughts. You can find my CV [here](../assets/cv.pdf).
 
 [![Source](https://live.staticflickr.com/5589/15118669759_fe921a23b0_k.jpg)](https://www.flickr.com/photos/ronaharoni/15118669759/in/album-72157647840255822/)
 

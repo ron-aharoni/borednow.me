@@ -27,9 +27,8 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: https://github.com/ron-aharoni
-  # twitter: /
-  # facebook: /
   linkedin: https://www.linkedin.com/in/ron-aharoni
+  goodreads: https://www.goodreads.com/user/show/61051469-ron-aharoni
   # mail: mailto:name@email.com
 
 # Customize the overview with displaying a tagcloud on the index page.
