@@ -13,9 +13,6 @@ Welcome to my blog. I'm a software engineer and photographer. This blog will inc
 
 > IF DOLPHINS ARE SO SMART, HOW COME THEY LIVE IN IGLOOS?
 
-> What did the dyslexic devil worshipper do?
-Sold his soul to santa
-
 > You are the average of the five people you spend the most time with.
 Jim Rohn
 
