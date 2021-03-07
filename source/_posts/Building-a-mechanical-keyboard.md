@@ -45,10 +45,6 @@ $ sudo make keebio/nyquist/rev3:mylayout:flash
 
 ### The end result
 As you can see I had to be creative with some keycap labels, but more are on the way :)
-
-</br>
-<img style="display: inline;" src="/images/IMG_20201024_195103.jpg">
-</br>
-<img style="display: inline;" src="/images/IMG_20201025_104204.jpg">
-</br>
-<img style="display: inline;" src="/images/IMG_20201025_104208.jpg">
+![keyboard](https://i.imgur.com/NH5PHFm.jpeg "keyboard")
+![keyboard](https://i.imgur.com/UV98sj3.jpeg "keyboard")
+![keyboard](https://i.imgur.com/RQDljq4.jpeg "keyboard")

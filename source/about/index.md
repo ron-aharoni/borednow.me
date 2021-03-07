@@ -5,7 +5,7 @@ date: 2020-06-06 20:20:09
 
 Welcome to my blog. I'm a software engineer and photographer. This blog will include my random thoughts. You can find my CV [here](../assets/cv.pdf).
 
-[![Source](https://live.staticflickr.com/5589/15118669759_fe921a23b0_k.jpg)](https://www.flickr.com/photos/ronaharoni/15118669759/in/album-72157647840255822/)
+![Viking ship museum](https://i.imgur.com/ysNw56Y.jpg "Viking ship museum")
 
 ## Random Quotes
 > Jean-Claude Juncker, on the euro crisis:
@@ -15,8 +15,5 @@ Welcome to my blog. I'm a software engineer and photographer. This blog will inc
 
 > You are the average of the five people you spend the most time with.
 Jim Rohn
-
-> If you want to build a ship, don’t drum up the men to gather wood, divide the work and give orders. Instead, teach them to yearn for the vast and endless sea.
-Antoine de Saint-Exupéry
 
 > If You Run From Your Ghosts You’ll Never Find Out What They Want
