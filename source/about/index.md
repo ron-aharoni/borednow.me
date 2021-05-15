@@ -17,3 +17,5 @@ Welcome to my blog. I'm a software engineer and photographer. This blog will inc
 Jim Rohn
 
 > If You Run From Your Ghosts You’ll Never Find Out What They Want
+
+> Mr Di Rupo is also the man who once argued that sky-high unemployment in Wallonia is not such a serious problem as all that, because once you add up childhood, old age, weekends and sleeping, work only accounts for 20% of the life of someone who reaches 80.
