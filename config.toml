@@ -1,0 +1,79 @@
+# The URL the site will be built for
+base_url = "https://borednow.me"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "papaya"
+
+title = "Ron Aharoni"
+description = "bored now"
+generate_feed = true
+
+taxonomies = [
+    { name = "categories", feed = true },
+    { name = "tags", feed = true },
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "nord"
+
+smart_punctuation = true
+
+[languages]
+
+[languages.en]
+title = "Bored Now"
+description = "Bored now"
+generate_feed = true
+feed_filename = "atom.xml"
+
+[languages.en.translations]
+projects = "Projects"
+blog = "Blog"
+about = "About"
+resume = "Resume"
+recent_projects = "Recent Projects"
+more_projects = "More Projects"
+recent_blog_posts = "Recent Blog Posts"
+more_blog_posts = "More blog posts"
+tag = "Tag"
+tags = "Tags"
+to_all_tags = "To all tags"
+category = "Category"
+categories = "Categories"
+to_all_categories = "To all categories"
+view_by = "View by"
+other = "Other"
+minute = "min"
+prev_page = "To newer posts"
+next_page = "To older posts"
+# Customize your post date format. See: https://tera.netlify.app/docs/#date
+date_format = "%B %e, %Y"
+
+[extra]
+# Put all your custom variables here
+
+# List of Papaya navigational menu items. Used to construct the navigation bar. See the README for item schema.
+menu_items = [
+    { name = "blog", url = "$BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
+    { name = "about", url = "$BASE_URL/about/"}
+]
+
+[extra.images]
+max_width = 4500
+
+[extra.social]
+email = "aharoni.ron@gmail.com"
+github = "ron-aharoni"
+linkedin = "ron.aharoni"
+
+# CDN links
+[extra.cdn]
+font_awesome = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
