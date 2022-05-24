@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Bored Now</title>
+	<link href="https://borednow.me/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://borednow.me"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-07T20:52:43+00:00</updated>
+	<id>https://borednow.me/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Building a mechanical keyboard</title>
+		<published>2020-11-07T20:52:43+00:00</published>
+		<updated>2020-11-07T20:52:43+00:00</updated>
+		<link href="https://borednow.me/blog/keyboard/" type="text/html"/>
+		<id>https://borednow.me/blog/keyboard/</id>
+		<content type="html">&lt;p&gt;A friend recently told me he ordered parts for a split mechanical keyboard.
+I have been using a split keyboard for several years (the &lt;a href=&quot;https:&#x2F;&#x2F;kinesis-ergo.com&#x2F;shop&#x2F;freestyle2-for-pc-us&#x2F;&quot;&gt;Kinesis Freestyle 2&lt;&#x2F;a&gt;) and like the experience. I was looking for a new split, this time a mechanical keyboard, but it seemed all good options (that is, without awkward &lt;a href=&quot;https:&#x2F;&#x2F;ergodox-ez.com&#x2F;&quot;&gt;thumb keys&lt;&#x2F;a&gt;) are custom builds. So I jumped on the opportunity to build one with him.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;parts&quot;&gt;Parts&lt;a class=&quot;zola-anchor&quot; href=&quot;#parts&quot; aria-label=&quot;Anchor link for: parts&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;I ordererd the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nyquist 60% ortholinear PCB and plates from &lt;a href=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;keeb.io&quot;&gt;keeb.io&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Cherry Brown switches&lt;&#x2F;li&gt;
+&lt;li&gt;DSA keycaps from &lt;a href=&quot;https:&#x2F;&#x2F;pimpmykeyboard.com&#x2F;dsa-standard-sublimated-keysets&#x2F;&quot;&gt;pimpmykeyboard.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Fancy TRRS and &lt;a href=&quot;https:&#x2F;&#x2F;kprepublic.com&#x2F;products&#x2F;textile-jean-cloth-usb-c-micro-cable-type-c-usb-1-6m-stright-length-blue-colorway?_pos=9&amp;amp;_sid=f199e67bf&amp;amp;_ss=r&quot;&gt;USB-C&lt;&#x2F;a&gt; cables&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The assembly process, with the help of my friend, was pretty simple. We installed the space bar stabilizers, soldered the switches and assembled the top and bottom plates.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;designing-a-layout&quot;&gt;Designing a layout&lt;a class=&quot;zola-anchor&quot; href=&quot;#designing-a-layout&quot; aria-label=&quot;Anchor link for: designing-a-layout&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Due to the keyboard being a 60% keyboard, and missing some keys, several layers are needed. Here are my layers for the Nyquist:
+&lt;&#x2F;br&gt;
+&lt;img style=&quot;display: inline;&quot; src=&quot;layout.png&quot;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;flashing-the-firmware&quot;&gt;Flashing the firmware&lt;a class=&quot;zola-anchor&quot; href=&quot;#flashing-the-firmware&quot; aria-label=&quot;Anchor link for: flashing-the-firmware&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The hardest part was surprisingly flashing the firmware, which is why I decided to document it here.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;a href=&quot;https:&#x2F;&#x2F;beta.docs.qmk.fm&#x2F;tutorial&#x2F;newbs_getting_started&quot;&gt;qmk&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Build your keymap on &lt;a href=&quot;https:&#x2F;&#x2F;config.qmk.fm&#x2F;&quot;&gt;https:&#x2F;&#x2F;config.qmk.fm&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Download the keymap json and save it in the qmk_firmware folder (the qmk installation location).&lt;&#x2F;li&gt;
+&lt;li&gt;Generate the firmware by running the following command:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; qmk compile mylayout.json
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This copies the firmware into qmk’s firmware folder.
+5. Reset your keyboard.
+6. Flash the firmware:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; sudo make keebio&#x2F;nyquist&#x2F;rev3:mylayout:flash
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;the-end-result&quot;&gt;The end result&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-end-result&quot; aria-label=&quot;Anchor link for: the-end-result&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;As you can see I had to be creative with some keycap labels, but more are on the way :)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;top.jpeg&quot; alt=&quot;keyboard&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;side.jpeg&quot; alt=&quot;keyboard&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;wood.jpeg&quot; alt=&quot;keyboard&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Linux laptop</title>
+		<published>2020-07-10T22:16:40+00:00</published>
+		<updated>2020-07-10T22:16:40+00:00</updated>
+		<link href="https://borednow.me/blog/linux-laptop/" type="text/html"/>
+		<id>https://borednow.me/blog/linux-laptop/</id>
+		<content type="html">&lt;p&gt;I recently purchased a laptop. My requirements were a HiDPI screen for photo editing, 16GB of RAM and a CPU that is suitable for development (not only of the Node.js full stack variety).&lt;&#x2F;p&gt;
+&lt;p&gt;I considered an MBP, but used MacBook’s have horrible keyboard or are too old, and newer ones cost alot. With macs out of the picture, I considered Lenovo, Dell, and Asus, and my budget was up to 1300USD. A refurbished or used thinkpad would have answered all the requirements, except for the screen, and they also have old propietary charging connectors which are annoying if you’re used to USB C.&lt;&#x2F;p&gt;
+&lt;p&gt;After much consideration I settled on a &lt;a href=&quot;https:&#x2F;&#x2F;www.lenovo.com&#x2F;il&#x2F;en&#x2F;laptops&#x2F;ideapad&#x2F;s-series&#x2F;Lenovo-IdeaPad-S540-13IML&#x2F;p&#x2F;88IPS501379&quot;&gt;Lenovo IdeaPad S540-IML&lt;&#x2F;a&gt;.
+Being a consumer Laptop, I was worried about Linux compatibility, but the specs and price were too good to pass up:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;10th Gen Intel Quad Core i5-10210U CPU @ 1.60GHz, up to 4.2 GHz&lt;&#x2F;li&gt;
+&lt;li&gt;16GB DDR4 2666MHz (soldered, non upgradable)&lt;&#x2F;li&gt;
+&lt;li&gt;1TB M.2 2280 SSD PCIe NVMe&lt;&#x2F;li&gt;
+&lt;li&gt;13.3 Inch QHD (2560 x 1600)&lt;&#x2F;li&gt;
+&lt;li&gt;NVIDIA GeForce MX250, with 2GB GDDR5 VRAM (optional, but doesn’t add much to the price)&lt;&#x2F;li&gt;
+&lt;li&gt;2 x USB 3.1 Type-C&lt;&#x2F;li&gt;
+&lt;li&gt;1 x USB 3.1 Type-A (Gen 1)&lt;&#x2F;li&gt;
+&lt;li&gt;~1.4 KG&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The plan was to dual boot Windows 10, which will be used for casual gaming and photo editing, and linux for development.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;choosing-a-distro&quot;&gt;Choosing a distro&lt;a class=&quot;zola-anchor&quot; href=&quot;#choosing-a-distro&quot; aria-label=&quot;Anchor link for: choosing-a-distro&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;In the past I used Ubuntu, Debian, Mint (both the Ubuntu and Debian based editions), Fedora and most recently Arch linux. I also heard about PopOS so I thought to give it a try as well.&lt;&#x2F;p&gt;
+&lt;p&gt;I created a PopOS live USB, and the system looked good, but had a freezing issue. Perhaps it would have been solved by installing updates, but I didn’t check. Other than that everything worked which encouraged me.&lt;&#x2F;p&gt;
+&lt;p&gt;I later tried linux mint, which failed to detect the Wi-Fi card. It was also slow compared to PopOS, which I think was down the the desktop environment (Cinnamon vs Gnome for PopOS).&lt;&#x2F;p&gt;
+&lt;p&gt;The third system I tried, and the one I stuck to was Manjaro gnome edition. I like arch, but wanted something easier as this will be my main system.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installation-steps&quot;&gt;Installation steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#installation-steps&quot; aria-label=&quot;Anchor link for: installation-steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The main deliberation here was partitioning. Since I want to dual boot with Windows 10. Most reccommend disabling Secure Boot and fast boot. Before disabling them my system didn’t boot from the live USB.
+After disabling them, I shrank the Windows partition to half its size.
+I booted into the Manjaro live USB, and started the graphical installer.
+There are conflicting articles about whether to use one or two UEFI boot partitions. I opted to leave the Windows boot partition as is and create a different one for Manjaro as it seems that this has less change of conflicts if Windows decides to change something in the boot partition.
+This is the final partition layout:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;|             Type             |   Size   |       Role       |   Mount   |
+&lt;&#x2F;span&gt;&lt;span&gt;|:----------------------------:|:--------:|:----------------:|:---------:|
+&lt;&#x2F;span&gt;&lt;span&gt;|          EFI system          |  260 MiB |   Windows boot   |           |
+&lt;&#x2F;span&gt;&lt;span&gt;| Microsoft reserved partition |  16 MiB  |     god knows    |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|  Basic Data Partition (NTFS) |  451 GiB |   Windows data   |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|          EFI System          |  512 MiB |    Linux boot    | &#x2F;boot&#x2F;efi |
+&lt;&#x2F;span&gt;&lt;span&gt;|           linuxswap          | 7.91 GiB |       Swap       |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ext4             |   27.94  |    Manjaro OS    |     &#x2F;     |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ext4             |   27.94  |  Alternative OS  |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ext4             |  436 GiB |       home       |   &#x2F;home   |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ntfs             | 1000 MiB | Windows recovery |           |
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;post-install&quot;&gt;Post install&lt;a class=&quot;zola-anchor&quot; href=&quot;#post-install&quot; aria-label=&quot;Anchor link for: post-install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Run updates, install chromium, Code OSS (VS Code), 
+I like a drop down terminal, and &lt;a href=&quot;https:&#x2F;&#x2F;extensions.gnome.org&#x2F;extension&#x2F;1509&#x2F;drop-down-terminal-x&#x2F;&quot;&gt;this&lt;&#x2F;a&gt; one works well.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fixing-issues&quot;&gt;Fixing issues&lt;a class=&quot;zola-anchor&quot; href=&quot;#fixing-issues&quot; aria-label=&quot;Anchor link for: fixing-issues&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I encountered two issues, random freezing, which was solved by upgrading the system, and no sound, which was solved as described in the &lt;a href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;index.php&#x2F;Lenovo_IdeaPad_S540_13IML&quot;&gt;Arch Wiki page&lt;&#x2F;a&gt; I opened for the laptop.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installing-scala&quot;&gt;Installing Scala&lt;a class=&quot;zola-anchor&quot; href=&quot;#installing-scala&quot; aria-label=&quot;Anchor link for: installing-scala&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Install a JDK (Arch only has OpenJDK) and the sbt package.
+I use Visual Studio Code, and the version in the repostiries is the open source one Code OSS.
+Install the Metals extension for Code OSS.
+Then I had a really weird error when downloading dependencies from sbt. This &lt;a href=&quot;https:&#x2F;&#x2F;classicforum.manjaro.org&#x2F;index.php?topic=236.0&quot;&gt;solution&lt;&#x2F;a&gt; worked.&lt;&#x2F;p&gt;
+&lt;p&gt;It took a day, but in the end I’m really happy with the system.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Life Philosophy</title>
+		<published>2020-07-08T20:19:00+00:00</published>
+		<updated>2020-07-08T20:19:00+00:00</updated>
+		<link href="https://borednow.me/blog/life-philosophy/" type="text/html"/>
+		<id>https://borednow.me/blog/life-philosophy/</id>
+		<content type="html">&lt;ol&gt;
+&lt;li&gt;Talk about your feelings.&lt;&#x2F;li&gt;
+&lt;li&gt;Do something you are good at.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep yourself hydrated.&lt;&#x2F;li&gt;
+&lt;li&gt;Eat well.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep active in mind and body.&lt;&#x2F;li&gt;
+&lt;li&gt;Take a break.&lt;&#x2F;li&gt;
+&lt;li&gt;Stay connected to those you care about.&lt;&#x2F;li&gt;
+&lt;li&gt;Ask for help.&lt;&#x2F;li&gt;
+&lt;li&gt;Be proud of your very being.&lt;&#x2F;li&gt;
+&lt;li&gt;Actively care for others.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>This blog</title>
+		<published>2020-06-08T12:19:00+00:00</published>
+		<updated>2020-06-08T12:19:00+00:00</updated>
+		<link href="https://borednow.me/blog/this-blog/" type="text/html"/>
+		<id>https://borednow.me/blog/this-blog/</id>
+		<content type="html">&lt;p&gt;A brand new website is born! 
+The year is now 2022, and I’ve finally redone my website! 
+This is my second one, the previous was done with &lt;a href=&quot;https:&#x2F;&#x2F;hexo.io&quot;&gt;Hexo&lt;&#x2F;a&gt;, but I felt it too complicated and somewhat not maintained.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;domain&quot;&gt;Domain&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain&quot; aria-label=&quot;Anchor link for: domain&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Bought from &lt;a href=&quot;https:&#x2F;&#x2F;www.namecheap.com&#x2F;&quot;&gt;namecheap&lt;&#x2F;a&gt;. Setup described &lt;a href=&quot;https:&#x2F;&#x2F;richpauloo.github.io&#x2F;2019-11-17-Linking-a-Custom-Domain-to-Github-Pages&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;theme&quot;&gt;Theme&lt;a class=&quot;zola-anchor&quot; href=&quot;#theme&quot; aria-label=&quot;Anchor link for: theme&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;I’m using the Papaya theme, by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;justint&quot;&gt;justtint&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>About</title>
+		<published>2020-06-06T20:20:09+00:00</published>
+		<updated>2020-06-06T20:20:09+00:00</updated>
+		<link href="https://borednow.me/about/" type="text/html"/>
+		<id>https://borednow.me/about/</id>
+		<content type="html">&lt;p&gt;Welcome to my blog. I’m a software engineer and photographer. This blog will include my random thoughts. You can find my CV &lt;a href=&quot;&#x2F;cv.pdf&quot;&gt;here&lt;&#x2F;a&gt;.
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;img src=&quot;&#x2F;banner.jpg&quot; alt=&quot;Viking ship museum&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;random-quotes&quot;&gt;Random Quotes&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jean-Claude Juncker, on the euro crisis:
+We all know what to do, but we don’t know how to get re-elected once we have done it&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IF DOLPHINS ARE SO SMART, HOW COME THEY LIVE IN IGLOOS?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are the average of the five people you spend the most time with.
+Jim Rohn&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If You Run From Your Ghosts You’ll Never Find Out What They Want&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mr Di Rupo is also the man who once argued that sky-high unemployment in Wallonia is not such a serious problem as all that, because once you add up childhood, old age, weekends and sleeping, work only accounts for 20% of the life of someone who reaches 80.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+	</entry>
+</feed>

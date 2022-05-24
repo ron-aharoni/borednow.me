@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Bored Now - life</title>
+	<link href="https://borednow.me/tags/life/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://borednow.me"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-07-08T20:19:00+00:00</updated>
+	<id>https://borednow.me/tags/life/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Life Philosophy</title>
+		<published>2020-07-08T20:19:00+00:00</published>
+		<updated>2020-07-08T20:19:00+00:00</updated>
+		<link href="https://borednow.me/blog/life-philosophy/" type="text/html"/>
+		<id>https://borednow.me/blog/life-philosophy/</id>
+		<content type="html">&lt;ol&gt;
+&lt;li&gt;Talk about your feelings.&lt;&#x2F;li&gt;
+&lt;li&gt;Do something you are good at.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep yourself hydrated.&lt;&#x2F;li&gt;
+&lt;li&gt;Eat well.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep active in mind and body.&lt;&#x2F;li&gt;
+&lt;li&gt;Take a break.&lt;&#x2F;li&gt;
+&lt;li&gt;Stay connected to those you care about.&lt;&#x2F;li&gt;
+&lt;li&gt;Ask for help.&lt;&#x2F;li&gt;
+&lt;li&gt;Be proud of your very being.&lt;&#x2F;li&gt;
+&lt;li&gt;Actively care for others.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+	</entry>
+</feed>

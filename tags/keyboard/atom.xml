@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Bored Now - keyboard</title>
+	<link href="https://borednow.me/tags/keyboard/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://borednow.me"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-11-07T20:52:43+00:00</updated>
+	<id>https://borednow.me/tags/keyboard/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Building a mechanical keyboard</title>
+		<published>2020-11-07T20:52:43+00:00</published>
+		<updated>2020-11-07T20:52:43+00:00</updated>
+		<link href="https://borednow.me/blog/keyboard/" type="text/html"/>
+		<id>https://borednow.me/blog/keyboard/</id>
+		<content type="html">&lt;p&gt;A friend recently told me he ordered parts for a split mechanical keyboard.
+I have been using a split keyboard for several years (the &lt;a href=&quot;https:&#x2F;&#x2F;kinesis-ergo.com&#x2F;shop&#x2F;freestyle2-for-pc-us&#x2F;&quot;&gt;Kinesis Freestyle 2&lt;&#x2F;a&gt;) and like the experience. I was looking for a new split, this time a mechanical keyboard, but it seemed all good options (that is, without awkward &lt;a href=&quot;https:&#x2F;&#x2F;ergodox-ez.com&#x2F;&quot;&gt;thumb keys&lt;&#x2F;a&gt;) are custom builds. So I jumped on the opportunity to build one with him.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;parts&quot;&gt;Parts&lt;a class=&quot;zola-anchor&quot; href=&quot;#parts&quot; aria-label=&quot;Anchor link for: parts&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;I ordererd the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nyquist 60% ortholinear PCB and plates from &lt;a href=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;keeb.io&quot;&gt;keeb.io&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Cherry Brown switches&lt;&#x2F;li&gt;
+&lt;li&gt;DSA keycaps from &lt;a href=&quot;https:&#x2F;&#x2F;pimpmykeyboard.com&#x2F;dsa-standard-sublimated-keysets&#x2F;&quot;&gt;pimpmykeyboard.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Fancy TRRS and &lt;a href=&quot;https:&#x2F;&#x2F;kprepublic.com&#x2F;products&#x2F;textile-jean-cloth-usb-c-micro-cable-type-c-usb-1-6m-stright-length-blue-colorway?_pos=9&amp;amp;_sid=f199e67bf&amp;amp;_ss=r&quot;&gt;USB-C&lt;&#x2F;a&gt; cables&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The assembly process, with the help of my friend, was pretty simple. We installed the space bar stabilizers, soldered the switches and assembled the top and bottom plates.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;designing-a-layout&quot;&gt;Designing a layout&lt;a class=&quot;zola-anchor&quot; href=&quot;#designing-a-layout&quot; aria-label=&quot;Anchor link for: designing-a-layout&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Due to the keyboard being a 60% keyboard, and missing some keys, several layers are needed. Here are my layers for the Nyquist:
+&lt;&#x2F;br&gt;
+&lt;img style=&quot;display: inline;&quot; src=&quot;layout.png&quot;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;flashing-the-firmware&quot;&gt;Flashing the firmware&lt;a class=&quot;zola-anchor&quot; href=&quot;#flashing-the-firmware&quot; aria-label=&quot;Anchor link for: flashing-the-firmware&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The hardest part was surprisingly flashing the firmware, which is why I decided to document it here.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;a href=&quot;https:&#x2F;&#x2F;beta.docs.qmk.fm&#x2F;tutorial&#x2F;newbs_getting_started&quot;&gt;qmk&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Build your keymap on &lt;a href=&quot;https:&#x2F;&#x2F;config.qmk.fm&#x2F;&quot;&gt;https:&#x2F;&#x2F;config.qmk.fm&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Download the keymap json and save it in the qmk_firmware folder (the qmk installation location).&lt;&#x2F;li&gt;
+&lt;li&gt;Generate the firmware by running the following command:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; qmk compile mylayout.json
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This copies the firmware into qmk’s firmware folder.
+5. Reset your keyboard.
+6. Flash the firmware:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2e3440;color:#d8dee9;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#88c0d0;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; sudo make keebio&#x2F;nyquist&#x2F;rev3:mylayout:flash
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;the-end-result&quot;&gt;The end result&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-end-result&quot; aria-label=&quot;Anchor link for: the-end-result&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;As you can see I had to be creative with some keycap labels, but more are on the way :)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;top.jpeg&quot; alt=&quot;keyboard&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;side.jpeg&quot; alt=&quot;keyboard&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;borednow.me&#x2F;blog&#x2F;keyboard&#x2F;wood.jpeg&quot; alt=&quot;keyboard&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

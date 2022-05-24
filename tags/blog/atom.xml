@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Bored Now - blog</title>
+	<link href="https://borednow.me/tags/blog/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://borednow.me"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-06-08T12:19:00+00:00</updated>
+	<id>https://borednow.me/tags/blog/atom.xml</id>
+	<entry xml:lang="en">
+		<title>This blog</title>
+		<published>2020-06-08T12:19:00+00:00</published>
+		<updated>2020-06-08T12:19:00+00:00</updated>
+		<link href="https://borednow.me/blog/this-blog/" type="text/html"/>
+		<id>https://borednow.me/blog/this-blog/</id>
+		<content type="html">&lt;p&gt;A brand new website is born! 
+The year is now 2022, and I’ve finally redone my website! 
+This is my second one, the previous was done with &lt;a href=&quot;https:&#x2F;&#x2F;hexo.io&quot;&gt;Hexo&lt;&#x2F;a&gt;, but I felt it too complicated and somewhat not maintained.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;domain&quot;&gt;Domain&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain&quot; aria-label=&quot;Anchor link for: domain&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Bought from &lt;a href=&quot;https:&#x2F;&#x2F;www.namecheap.com&#x2F;&quot;&gt;namecheap&lt;&#x2F;a&gt;. Setup described &lt;a href=&quot;https:&#x2F;&#x2F;richpauloo.github.io&#x2F;2019-11-17-Linking-a-Custom-Domain-to-Github-Pages&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;theme&quot;&gt;Theme&lt;a class=&quot;zola-anchor&quot; href=&quot;#theme&quot; aria-label=&quot;Anchor link for: theme&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;I’m using the Papaya theme, by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;justint&quot;&gt;justtint&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

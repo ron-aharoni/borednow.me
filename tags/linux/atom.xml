@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Bored Now - linux</title>
+	<link href="https://borednow.me/tags/linux/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://borednow.me"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-07-10T22:16:40+00:00</updated>
+	<id>https://borednow.me/tags/linux/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Linux laptop</title>
+		<published>2020-07-10T22:16:40+00:00</published>
+		<updated>2020-07-10T22:16:40+00:00</updated>
+		<link href="https://borednow.me/blog/linux-laptop/" type="text/html"/>
+		<id>https://borednow.me/blog/linux-laptop/</id>
+		<content type="html">&lt;p&gt;I recently purchased a laptop. My requirements were a HiDPI screen for photo editing, 16GB of RAM and a CPU that is suitable for development (not only of the Node.js full stack variety).&lt;&#x2F;p&gt;
+&lt;p&gt;I considered an MBP, but used MacBook’s have horrible keyboard or are too old, and newer ones cost alot. With macs out of the picture, I considered Lenovo, Dell, and Asus, and my budget was up to 1300USD. A refurbished or used thinkpad would have answered all the requirements, except for the screen, and they also have old propietary charging connectors which are annoying if you’re used to USB C.&lt;&#x2F;p&gt;
+&lt;p&gt;After much consideration I settled on a &lt;a href=&quot;https:&#x2F;&#x2F;www.lenovo.com&#x2F;il&#x2F;en&#x2F;laptops&#x2F;ideapad&#x2F;s-series&#x2F;Lenovo-IdeaPad-S540-13IML&#x2F;p&#x2F;88IPS501379&quot;&gt;Lenovo IdeaPad S540-IML&lt;&#x2F;a&gt;.
+Being a consumer Laptop, I was worried about Linux compatibility, but the specs and price were too good to pass up:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;10th Gen Intel Quad Core i5-10210U CPU @ 1.60GHz, up to 4.2 GHz&lt;&#x2F;li&gt;
+&lt;li&gt;16GB DDR4 2666MHz (soldered, non upgradable)&lt;&#x2F;li&gt;
+&lt;li&gt;1TB M.2 2280 SSD PCIe NVMe&lt;&#x2F;li&gt;
+&lt;li&gt;13.3 Inch QHD (2560 x 1600)&lt;&#x2F;li&gt;
+&lt;li&gt;NVIDIA GeForce MX250, with 2GB GDDR5 VRAM (optional, but doesn’t add much to the price)&lt;&#x2F;li&gt;
+&lt;li&gt;2 x USB 3.1 Type-C&lt;&#x2F;li&gt;
+&lt;li&gt;1 x USB 3.1 Type-A (Gen 1)&lt;&#x2F;li&gt;
+&lt;li&gt;~1.4 KG&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The plan was to dual boot Windows 10, which will be used for casual gaming and photo editing, and linux for development.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;choosing-a-distro&quot;&gt;Choosing a distro&lt;a class=&quot;zola-anchor&quot; href=&quot;#choosing-a-distro&quot; aria-label=&quot;Anchor link for: choosing-a-distro&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;In the past I used Ubuntu, Debian, Mint (both the Ubuntu and Debian based editions), Fedora and most recently Arch linux. I also heard about PopOS so I thought to give it a try as well.&lt;&#x2F;p&gt;
+&lt;p&gt;I created a PopOS live USB, and the system looked good, but had a freezing issue. Perhaps it would have been solved by installing updates, but I didn’t check. Other than that everything worked which encouraged me.&lt;&#x2F;p&gt;
+&lt;p&gt;I later tried linux mint, which failed to detect the Wi-Fi card. It was also slow compared to PopOS, which I think was down the the desktop environment (Cinnamon vs Gnome for PopOS).&lt;&#x2F;p&gt;
+&lt;p&gt;The third system I tried, and the one I stuck to was Manjaro gnome edition. I like arch, but wanted something easier as this will be my main system.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installation-steps&quot;&gt;Installation steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#installation-steps&quot; aria-label=&quot;Anchor link for: installation-steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The main deliberation here was partitioning. Since I want to dual boot with Windows 10. Most reccommend disabling Secure Boot and fast boot. Before disabling them my system didn’t boot from the live USB.
+After disabling them, I shrank the Windows partition to half its size.
+I booted into the Manjaro live USB, and started the graphical installer.
+There are conflicting articles about whether to use one or two UEFI boot partitions. I opted to leave the Windows boot partition as is and create a different one for Manjaro as it seems that this has less change of conflicts if Windows decides to change something in the boot partition.
+This is the final partition layout:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2e3440;color:#d8dee9;&quot;&gt;&lt;code&gt;&lt;span&gt;|             Type             |   Size   |       Role       |   Mount   |
+&lt;&#x2F;span&gt;&lt;span&gt;|:----------------------------:|:--------:|:----------------:|:---------:|
+&lt;&#x2F;span&gt;&lt;span&gt;|          EFI system          |  260 MiB |   Windows boot   |           |
+&lt;&#x2F;span&gt;&lt;span&gt;| Microsoft reserved partition |  16 MiB  |     god knows    |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|  Basic Data Partition (NTFS) |  451 GiB |   Windows data   |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|          EFI System          |  512 MiB |    Linux boot    | &#x2F;boot&#x2F;efi |
+&lt;&#x2F;span&gt;&lt;span&gt;|           linuxswap          | 7.91 GiB |       Swap       |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ext4             |   27.94  |    Manjaro OS    |     &#x2F;     |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ext4             |   27.94  |  Alternative OS  |           |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ext4             |  436 GiB |       home       |   &#x2F;home   |
+&lt;&#x2F;span&gt;&lt;span&gt;|             ntfs             | 1000 MiB | Windows recovery |           |
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;post-install&quot;&gt;Post install&lt;a class=&quot;zola-anchor&quot; href=&quot;#post-install&quot; aria-label=&quot;Anchor link for: post-install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Run updates, install chromium, Code OSS (VS Code), 
+I like a drop down terminal, and &lt;a href=&quot;https:&#x2F;&#x2F;extensions.gnome.org&#x2F;extension&#x2F;1509&#x2F;drop-down-terminal-x&#x2F;&quot;&gt;this&lt;&#x2F;a&gt; one works well.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fixing-issues&quot;&gt;Fixing issues&lt;a class=&quot;zola-anchor&quot; href=&quot;#fixing-issues&quot; aria-label=&quot;Anchor link for: fixing-issues&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I encountered two issues, random freezing, which was solved by upgrading the system, and no sound, which was solved as described in the &lt;a href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;index.php&#x2F;Lenovo_IdeaPad_S540_13IML&quot;&gt;Arch Wiki page&lt;&#x2F;a&gt; I opened for the laptop.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;installing-scala&quot;&gt;Installing Scala&lt;a class=&quot;zola-anchor&quot; href=&quot;#installing-scala&quot; aria-label=&quot;Anchor link for: installing-scala&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Install a JDK (Arch only has OpenJDK) and the sbt package.
+I use Visual Studio Code, and the version in the repostiries is the open source one Code OSS.
+Install the Metals extension for Code OSS.
+Then I had a really weird error when downloading dependencies from sbt. This &lt;a href=&quot;https:&#x2F;&#x2F;classicforum.manjaro.org&#x2F;index.php?topic=236.0&quot;&gt;solution&lt;&#x2F;a&gt; worked.&lt;&#x2F;p&gt;
+&lt;p&gt;It took a day, but in the end I’m really happy with the system.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
